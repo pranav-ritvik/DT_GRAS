@@ -1,38 +1,434 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff; /* Light pastel blue background */
+}
+
 .App {
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #4682b4;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  color: #4682b4;
+  margin-right: 10px;
+}
+
+select {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-btn {
+  background-color: #add8e6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-btn:hover {
+  background-color: #87cefa;
+}
+
+.result {
+  margin-top: 30px;
+}
+
+.result h2 {
+  font-size: 24px;
+  color: #4682b4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 20px;
+  color: #2f4f4f;
+  background-color: #e0ffff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.room-btn {
+  background-color: #b3e5fc;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.room-btn:hover {
+  background-color: #81d4fa;
+}
+
+.comment-box {
+  margin-top: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #388e3c;
+}
+
+/* App.css */
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Rest of your existing CSS */
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #004d40; /* Dark green from logo */
+  background-color: #e0f2f1; /* Light pastel background */
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #004d40; /* Dark green */
+}
+
+.logo {
+  width: 200px; /* Adjust for larger logo */
+  height: auto;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  color: #00796b; /* Teal green from logo */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  font-weight: bold;
+  color: #004d40;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #00796b;
+  background-color: #e0f2f1;
+}
+
+.search-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #00796b;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #004d40;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result h2 {
+  color: #004d40;
+}
+
+.result ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.result li {
+  background-color: #e0f2f1;
+  color: #004d40;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result li:hover {
+  background-color: #b2dfdb;
+}
+
+.comment-box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.comment-box h3 {
+  margin-top: 0;
+}
+
+.comment-box textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.save-btn {
+  padding: 8px 15px;
+  color: #ffffff;
+  background-color: #006d5b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #005246;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: #006d5b; /* Based on logo color */
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #006d5b; /* Based on logo color */
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Styling for Classroom Availability text */
+.header h1 {
+  color: #ffffff;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* Logo styling */
+.logo {
+  height: 60px;
+}
+
+/* Styling for available room buttons */
+.result ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.result ul li {
+  margin: 0;
+}
+
+.result ul li button {
+  background-color: #004d40; /* Darker shade for the button */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.result ul li button:hover {
+  background-color: #00796b; /* Lighter shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Comment box styling */
+.comment-box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.comment-box h3 {
+  margin-top: 0;
+}
+
+.comment-box textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.save-btn {
+  padding: 8px 15px;
+  color: #ffffff;
+  background-color: #006d5b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #005246;
+}
+
+/* Updated header styling */
+.header {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 15px;
+  background: linear-gradient(135deg, #004d40, #00796b);
+  color: #ffffff;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+/* Logo styling */
+.logo {
+  height: 70px; /* Adjust for larger logo */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header text styling */
+.header h1 {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header h1,
+.logo {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* Container styling */
+.comment-container {
+  width: 100%;
+  max-width: 500px; /* Adjust based on your design */
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title styling */
+.comment-container h3 {
+  color: #2e7d6e;
+  font-size: 1.5em;
+  margin: 0 0 15px;
+}
+
+/* Textarea styling */
+.comment-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  resize: none;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.comment-container button {
+  background-color: #2e7d6e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-container button:hover {
+  background-color: #1b5e4e;
 }
