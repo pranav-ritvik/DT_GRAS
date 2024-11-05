@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/DT_GRAS/static/css/main.c4ab7f86.css",
+    "main.js": "/DT_GRAS/static/js/main.14ea630d.js",
+    "static/js/453.9f8dbf67.chunk.js": "/DT_GRAS/static/js/453.9f8dbf67.chunk.js",
+    "static/media/GITAM-logo.jpg": "/DT_GRAS/static/media/GITAM-logo.b690365a582d219f5eae.jpg",
+    "index.html": "/DT_GRAS/index.html",
+    "main.c4ab7f86.css.map": "/DT_GRAS/static/css/main.c4ab7f86.css.map",
+    "main.14ea630d.js.map": "/DT_GRAS/static/js/main.14ea630d.js.map",
+    "453.9f8dbf67.chunk.js.map": "/DT_GRAS/static/js/453.9f8dbf67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4ab7f86.css",
+    "static/js/main.14ea630d.js"
+  ]
+}
